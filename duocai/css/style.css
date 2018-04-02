@@ -13,9 +13,12 @@ a{text-decoration: none;}
 .tl{text-align: left;}
 .pull-left{float: left;}
 .pull-right{float: right;}
-[class^="icon-"],[class*=" icon-"]{display: inline-block;}
-.icon-right{width: 8px; height: 12px; background: url('../assets/icon/entry@2x.png') no-repeat; -webkit-background-size: 100% 100%;
-background-size: 100% 100%;}
+[class^="icon-"],[class*=" icon-"]{display: inline-block;vertical-align: middle;}
+.icon-right{width: 8px; height: 12px; background: url('../assets/icon/entry@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
+.icon-order{width: 16px; height: 20px; background: url('../assets/icon/order@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
+
+
+
 .container{padding: 0 16px;}
 body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antialiased}
 /* 家长服务  活动中心 开始 */
@@ -61,12 +64,17 @@ background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100
 .price{color: #FD8080; font-size: 20px; margin-top: 6px;}
 .status{font-size: 10px;}
 .cancel-btn,.delete-btn{font-size: 12px; color: #4a4a4a; border: 1px solid rgba(153,153,153,.5); border-radius: 24px; line-height: 24px; padding: 0 12px;}
+.order-list h5{font-size: 14px; color: #4a4a4a; line-height: 32px;background: linear-gradient(#f7f7f7,#f7f7f7 100%, transparent 100%) bottom / 100% 1px no-repeat;}
+.order-list h5 span{display: inline-block;vertical-align: middle;}
+.right-link{width: 60px; margin-top: 25px; text-align: right; line-height: 60px;}
 
 /* 家长服务  我的订单 结束 */
 
 
 @media only screen and (-webkit-min-device-pixel-ratio:3){
-    .icon-right{background: url('../assets/icon/entry@3x.png') no-repeat; -webkit-background-size: 100% 100%;background-size: 100% 100%;
-	}
+
+    
+	.icon-right{background: url('../assets/icon/entry@3x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
+	.icon-order{background: url('../assets/icon/order@3x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
 }
 
