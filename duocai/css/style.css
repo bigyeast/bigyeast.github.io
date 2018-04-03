@@ -16,7 +16,9 @@ a{text-decoration: none;}
 [class^="icon-"],[class*=" icon-"]{display: inline-block;vertical-align: middle;}
 .icon-right{width: 8px; height: 12px; background: url('../assets/icon/entry@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
 .icon-order{width: 16px; height: 20px; background: url('../assets/icon/order@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
-
+.icon-study-empty,.icon-collection-empty{ width: 154px; height: 160px;}
+.icon-study-empty{background: url('../assets/bg/learning-center@2x.png') no-repeat center center; background-size: 154px 160px;}
+.icon-collection-empty{background: url('../assets/bg/learning-center@2x.png') no-repeat center center; background-size: 154px 160px;}
 
 
 .container{padding: 0 16px;}
@@ -30,7 +32,7 @@ body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antial
 .ac-list .ac-des{font-size: 12px; color: #999; float: left;}
 .ac-list .ac-time{font-size: 10px; color: #444; float: right;}
 /* 家长服务  活动中心 结束 */
-/* 家长服务  我的订单 开始 */
+/* 家长服务  我的订单,学习中心 开始 */
 .order h2{font-size: 24px; line-height: 60px; padding: 0 16px;}
 	/* tab */
 .tab-control{display: table; width: 100%;table-layout: fixed; padding-bottom: 8px; 
@@ -67,13 +69,25 @@ background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100
 .order-list h5{font-size: 14px; color: #4a4a4a; line-height: 32px;background: linear-gradient(#f7f7f7,#f7f7f7 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .order-list h5 span{display: inline-block;vertical-align: middle;}
 .right-link{width: 60px; margin-top: 25px; text-align: right; line-height: 60px;}
+/* 家长服务  我的订单,学习中心 结束 */
+.study-stage{padding: 16px 15px;}
+.study-stage dl{overflow: hidden;}
+.study-stage dt{width: 30%; float: left;}
+.study-stage dd{float: left; width: 58%; margin-left: 10px; padding-left: 8%; padding-bottom: 2em; border-left: 1px solid rgba(153,153,153,0.25); position: relative;}
+.study-stage dd:after{position: absolute; left: -9px; top: 16px; width: 16px; height: 16px; border-radius: 50%; background-color: #d8d8d8; content: '';}
+li.on dd:after{ background-color: #fd8080;}
+.study-stage h4{color: #444;}
+.study-stage dt h4{font-size: 18px;}
+.study-stage dd h4{font-size: 16px;}
+.study-stage p{font-size: 14px;}
+.study-stage dt p{color: #999;}
+.study-stage dd p{color: #777;}
 
-/* 家长服务  我的订单 结束 */
+.empty{text-align: center; margin-top: 40%;}
+.empty p{font-size: 14px; color: #999; line-height: 42px; font-weight: bold;}
 
 
 @media only screen and (-webkit-min-device-pixel-ratio:3){
-
-    
 	.icon-right{background: url('../assets/icon/entry@3x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
 	.icon-order{background: url('../assets/icon/order@3x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
 }
