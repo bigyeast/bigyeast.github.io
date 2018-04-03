@@ -47,7 +47,7 @@ background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100
 .order-list mark{background-color: #FED846; border-radius: 4px; font-size: 12px; padding: 2px;}
 .order-list h3{line-height: 36px;}
 .order-list h3 strong{font-size: 16px; color: #444;}
-.order-list a{display: inline-block;}
+.order-list a{display: inline-block; color: #4A4A4A;}
 .order-list dl{width: 68vw; overflow: hidden;}
 .order-list dt{width: 64px; height: 64px; float: left; padding-right: 12px;}
 .order-list dt img{display: block; width: 100%; border-radius: 10px;}
