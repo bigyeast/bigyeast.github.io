@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>多彩-找老师</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="container">
+		<div class="search-top">
+			<input type="text" placeholder="搜索老师名/机构名/课程名">
+		</div>
+		<div class="tab-control tab-teacher">
+			<a href="#">
+				授课地区 <em class="triangle"></em>
+			</a>
+			<a href="#" class="active">
+				授课方式 <em class="triangle"></em>
+			</a>
+			<a href="#">
+				信息来源 <em class="triangle"></em>
+			</a>
+		</div>
+	</section>
+	<div class="modal" style="display: block;">
+		<div class="modal-box">
+			<ul class="tab-select">
+				<!-- 授课方式 -->
+				<li class="on"><i class="icon-teacher"></i> 老师上门</li>
+				<li><i class="icon-student"></i> 学生上门</li>
+				<li><i class="icon-online"></i> 在线授教</li>
+				<!-- 信息来源 -->
+				<li class="on"><i class="icon-teacher"></i> 个人</li>
+				<li><i class="icon-organization"></i> 机构</li>
+			</ul>
+		</div>
+		<div class="modal-bg"></div>
+	</div>
+	
+<!-- 当modal显示的时候，请给下面的div添加class：blur -->
+	<section class="container blur">
+		<div class="control-content">
+			<ul class="teacher-list">
+				<li>
+					<a href="#" class="teacher-photo"><img src="images/img-7.jpg" alt=""></a>
+					<div class="teacher-info">
+						<div class="info-item">
+							<h3>
+								<mark>个人</mark>
+								<a href="#"><strong>Rita 老师</strong></a>
+							</h3>
+							<p>
+								<span class="fivestar">
+									<i></i>
+								</span> 
+								<span>报名122人 | 教龄3年</span>
+							</p>
+							<p>
+								<em class="t-label">1对1</em>
+								<em class="t-label">认证</em>
+								<em class="t-label">朋友团</em>
+							</p>
+						</div>
+						<div class="teacher-class">
+							<p class="clearfix">
+								<span class="pull-left">
+									<i class="sign-hot">热</i> 声乐技巧班私一对一教课 <span class="t-money">¥2990</span>
+								</span>
+								<span class="pull-right clsss-total">
+									5个课程
+								</span>
+								 </p>
+							<p><i class="sign-try">试</i> 钢琴大班课 <span class="t-money">¥168</span> </p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="teacher-photo"><img src="images/img-4.jpg" alt=""></a>
+					<div class="teacher-info">
+						<div class="info-item">
+							<h3>
+								<mark>个人</mark>
+								<a href="#"><strong>Rita 老师</strong></a>
+							</h3>
+							<p>
+								<span class="fivestar">
+									<i class="four"></i>
+								</span> 
+								<span>报名92人  |  创办8年</span>
+							</p>
+							<p>
+								<em class="t-label">认证</em>
+								<em class="t-label">师资</em>
+								<em class="t-label">品牌</em>
+							</p>
+						</div>
+						<div class="teacher-class">
+							<p class="clearfix">
+								<span class="pull-left"><i class="sign-team">团</i> 单人零基础精品油画 <span class="t-money">¥158</span> 
+							</span>
+							<span class="pull-right clsss-total">
+									6个课程
+								</span></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="teacher-photo"><img src="images/img-6.jpg" alt=""></a>
+					<div class="teacher-info">
+						<div class="info-item">
+							<h3>
+								<mark>个人</mark>
+								<a href="#"><strong>Rita 老师</strong></a>
+							</h3>
+							<p>
+								<span class="fivestar">
+									<i class="three"></i>
+								</span> 
+								<span>报名122人 | 教龄3年</span>
+							</p>
+							<p>
+								<em class="t-label">1对1</em>
+								<em class="t-label">认证</em>
+								<em class="t-label">朋友团</em>
+							</p>
+						</div>
+						<div class="teacher-class">
+							<p>
+								<span>
+								<i class="sign-hot">热</i> 声乐技巧班私一对一教课 <span class="t-money">¥2990</span> 
+								</span>
+							</p>
+							<p><i class="sign-class">课</i> SCA咖啡师认证课程、翻糖甜品台、韩式... <span class="t-money">¥168</span> </p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="teacher-photo"><img src="images/img-5.jpg" alt=""></a>
+					<div class="teacher-info">
+						<div class="info-item">
+							<h3>
+								<mark>个人</mark>
+								<a href="#"><strong>Rita 老师</strong></a>
+							</h3>
+							<p>
+								<span class="fivestar">
+									<i class="two"></i>
+								</span> 
+								<span>报名122人 | 教龄3年</span>
+							</p>
+							<p>
+								<em class="t-label">1对1</em>
+								<em class="t-label">认证</em>
+								<em class="t-label">朋友团</em>
+							</p>
+						</div>
+						<div class="teacher-class">
+							<p><i class="sign-hot">热</i> 声乐技巧班私一对一教课 <span class="t-money">¥2990</span> </p>
+							<p><i class="sign-try">试</i> 钢琴大班课 <span class="t-money">¥168</span> </p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="teacher-photo"><img src="images/img-4.jpg" alt=""></a>
+					<div class="teacher-info">
+						<div class="info-item">
+							<h3>
+								<mark>个人</mark>
+								<a href="#"><strong>Rita 老师</strong></a>
+							</h3>
+							<p>
+								<span class="fivestar">
+									<i class="one"></i>
+								</span> 
+								<span>报名122人 | 教龄3年</span>
+							</p>
+							<p>
+								<em class="t-label">1对1</em>
+								<em class="t-label">认证</em>
+								<em class="t-label">朋友团</em>
+							</p>
+						</div>
+						<div class="teacher-class">
+							<p><i class="sign-hot">热</i> 声乐技巧班私一对一教课 <span class="t-money">¥2990</span> </p>
+							<p><i class="sign-try">试</i> 钢琴大班课 <span class="t-money">¥168</span> </p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
