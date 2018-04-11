@@ -136,6 +136,7 @@ background-size: 74px 72px;padding: 14px 0;}
 /*  */
 .empty-tab .tab-control{background: none;}
 .empty-tab .empty{margin-top: 15%;}
+/* 搜索 */
 .search-box{padding-top: 16px;}
 .search-box h4{line-height: 60px;}
 .search-box span i{margin-right: 8px; vertical-align: middle;}
@@ -151,12 +152,16 @@ background-size: 74px 72px;padding: 14px 0;}
 
 .search-top{padding: 8px 0;}
 .search-top input{background:#f3f3f3 url('../assets/icon/search-grey@2x.png') no-repeat 20px 12px; background-size: 15px 15px; border:none; width: 100%; box-sizing: border-box; padding-left:50px;}
+
 .triangle{width: 0; height: 0; border-right: 6px solid transparent; border-top: 6px solid #ccc; transform: rotate(-135deg); display: inline-block; margin-bottom: 3px; transition: all .5s;}
 a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bottom: 0; transition: all .5s; }
 
 
-
-
+/* 是否删除搜索历史 */
+.search-foot a{display: inline-block; border-radius: 44px; line-height: 30px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 14px;}
+.cancle-link{background-color: #fff; color: #FED846;}
+.sure-link{background-color: #FED846; color: #4a4a4a;}
+/* 找老师列表 */
 .teacher-list li{overflow: hidden;}
 .teacher-photo{margin-top: 10px;}
 .teacher-info{float: left; width: calc(100vw - 108px);}
@@ -170,12 +175,19 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .sign-team{background-color: #8ECE48;}
 .sign-class{background-color: #32A5F7;}
 .clsss-total{color: #999;}
+
 /* 弹出层 */
 .modal{display: none;}
+.modal-all{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1;}
 .modal-bg,.modal-box ul{width: 100%;  left: 0;}
-.modal-bg{height: 80%; position: absolute; bottom: 0; background-color: rgba(0, 0, 0, .4); z-index: 1;}
-.modal-box{position: relative;}
-.modal-box ul{background-color: #fff; border-radius: 0 0 15px 15px; position: absolute; top: -1px; z-index: 2; border-top: 1px solid #eaeaea;}
+.modal-bg{ position: absolute; bottom: 0; background-color: rgba(0, 0, 0, .4); z-index: 1; height: 100%;}
+.tab-modal .modal-bg{height: 80%;}
+.modal-box{position: absolute; z-index: 2; width: 100%;}
+.tab-modal .modal-box{position: relative;}
+.search-modal .modal-box{top: 0; height: 100%;}
+.tip-main{background-color: #fff; border-radius: 13px; width: 90%; height: 160px; position: absolute; left: 5%; top: 25%; z-index: 3; padding: 20px; box-sizing: border-box;}
+.tip-main h3{font-size: 20px; line-height: 40px; height: 80px;}
+.modal-box ul{background-color: #fff; border-radius: 0 0 15px 15px; position: absolute; top: -1px; z-index: 3; border-top: 1px solid #eaeaea;}
 .modal-box li{margin: 0 16px; line-height: 48px; font-size: 14px;}
 .modal-box li.on{background: url('../assets/right_sel@2x.png') no-repeat right center; background-size: 20px 16px; color: #FED846;}
 /* 虚化内容 */
