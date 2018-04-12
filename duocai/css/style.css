@@ -15,6 +15,10 @@ input:focus{outline:none;}
 .pull-left{float: left;}
 .pull-right{float: right;}
 .border-bottom{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
+.container{padding: 0 16px;}
+body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antialiased}
+
+/* 各种图标 */
 [class^="icon-"],[class*=" icon-"]{display: inline-block;vertical-align: middle;}
 .icon-right{width: 8px; height: 12px; background: url('../assets/icon/entry@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
 .icon-order{width: 16px; height: 20px; background: url('../assets/icon/order@2x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
@@ -37,8 +41,7 @@ input:focus{outline:none;}
 .icon-trash{background: url('../assets/trash@2x.png') no-repeat center center; background-size: 16px 16px;}
 
 
-.container{padding: 0 16px;}
-body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antialiased}
+
 /* 家长服务  活动中心 开始 */
 .ac-list img{display: block; width: 100%; border-radius: 15px 15px 0 0;}
 .ac-list li{border-radius: 15px; box-shadow: 0 3px 5px rgba(0, 0, 0, .1); margin: 24px 0;}
@@ -49,7 +52,7 @@ body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antial
 .ac-list .ac-time{font-size: 10px; color: #444; float: right;}
 /* 家长服务  活动中心 结束 */
 /* 家长服务  我的订单,学习中心 开始 */
-.order h2{font-size: 24px; line-height: 60px; padding: 0 16px;}
+h2.main-title{font-size: 24px; line-height: 60px; padding: 0 16px;}
 	/* tab */
 .tab-control{display: table; width: 100%;table-layout: fixed; padding-bottom: 8px; 
 background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;
@@ -175,7 +178,16 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .sign-team{background-color: #8ECE48;}
 .sign-class{background-color: #32A5F7;}
 .clsss-total{color: #999;}
-
+/* 认证与服务 */
+.idservice li{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
+.idservice li a{display: block; padding: 14px 0 14px 56px; position: relative;}
+.idservice li a:before{content: ''; display: inline-block; position: absolute; width: 40px; height: 40px; left: 0;}
+.idservice li a.iserver:before{background: url('../assets/icon/server@2x.png') no-repeat left center; background-size: 40px 40px;}
+.idservice li a.iqualified:before{background: url('../assets/icon/qualified@2x.png') no-repeat left center; background-size: 40px 40px;}
+.idservice li a.irealname:before{background: url('../assets/icon/realname@2x.png') no-repeat left center; background-size: 40px 40px;}
+.idservice li a.iauthentic:before{background: url('../assets/icon/authentic@2x.png') no-repeat left center; background-size: 40px 40px;}
+.idservice h4{color: #444; font-size: 16px;}
+.idservice p{color: #999; font-size: 12px;}
 /* 弹出层 */
 .modal{display: none;}
 .modal-all{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1;}
@@ -220,12 +232,17 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 	.icon-trash{background: url('../assets/trash@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.search-top input{background:#f3f3f3 url('../assets/icon/search-grey@3x.png') no-repeat 20px 12px; background-size: 15px 15px;}
 
-
+/* 小星星 */
 	.fivestar i{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'); background-size: 10px 10px,10px 10px,10px 10px,10px 10px,10px 10px; background-position: 0 center, 12px center,24px center,36px center,48px center;}
 	.fivestar i.four{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
 	.fivestar i.three{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
 	.fivestar i.two{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
 	.fivestar i.one{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
 	.fivestar i.zero{background-image: url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
+
+	.idservice li a.iserver:before{background: url('../assets/icon/server@3x.png') no-repeat left center; background-size: 40px 40px;}
+	.idservice li a.iqualified:before{background: url('../assets/icon/qualified@3x.png') no-repeat left center; background-size: 40px 40px;}
+	.idservice li a.irealname:before{background: url('../assets/icon/realname@3x.png') no-repeat left center; background-size: 40px 40px;}
+	.idservice li a.iauthentic:before{background: url('../assets/icon/authentic@3x.png') no-repeat left center; background-size: 40px 40px;}
 }
 
