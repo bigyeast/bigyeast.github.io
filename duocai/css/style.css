@@ -46,7 +46,7 @@ body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antial
 .ac-list img{display: block; width: 100%; border-radius: 15px 15px 0 0;}
 .ac-list li{border-radius: 15px; box-shadow: 0 3px 5px rgba(0, 0, 0, .1); margin: 24px 0;}
 .ac-list p,.ac-list div{padding-left: 16px; padding-right: 16px;}
-.ac-list p{font-size: 16px; line-height: 36px; color: #444; margin-top: 4px;}
+.ac-list p{font-size: 15px; line-height: 36px; color: #444; margin-top: 4px;}
 .ac-list span{line-height: 16px; display: inline-block; margin-bottom: 10px;}
 .ac-list .ac-des{font-size: 12px; color: #999; float: left;}
 .ac-list .ac-time{font-size: 10px; color: #444; float: right;}
@@ -57,51 +57,51 @@ h2.main-title{font-size: 24px; line-height: 60px; padding: 0 16px;}
 .tab-control{display: table; width: 100%;table-layout: fixed; padding-bottom: 8px; 
 background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;
 }
-.tab-control a{display: table-cell; font-size: 16px; font-weight: bold; line-height: 38px; text-align: center; width: 1%; position: relative; color: #3F3F3F;}
+.tab-control a{display: table-cell; font-size: 15px; font-weight: bold; line-height: 38px; text-align: center; width: 1%; position: relative; color: #3F3F3F;}
 .tab-order a.active{color: #FED846;}
 .tab-order a.active:after{display: inline-block; width: 16px; height: 3px;background-color: #FED846; content: ''; position: absolute;left: 50%; margin-left: -8px; bottom: 0;}
-.tab-teacher a{font-size: 14px; line-height: 32px; color: #777;}
+.tab-teacher a{font-size: 13px; line-height: 32px; color: #777;}
 .tab-teacher a.active{color: #FED846;}
 
 /* list */
 .order-list{padding: 0 16px;}
 .order-list li,.teacher-list li{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat; padding-bottom: 12px;}
+.order-list li section,.teacher-list li,.study-stage dl,.order-left dl{display: -webkit-flex; display: -moz-flex; display: flex;}
+.order-list li .order-left,.order-list dd{-webkit-flex: 1; flex: 1;}
 .order-list mark,.teacher-list mark{background-color: #FED846; border-radius: 4px; font-size: 12px; font-weight: normal; padding: 2px;}
 .order-list h3,.teacher-info h3{line-height: 36px;}
-.order-list h3 strong,.teacher-info h3 strong{font-size: 16px; color: #444;}
+.order-list h3 strong,.teacher-info h3 strong{font-size: 15px; color: #444;}
 .order-list a{display: inline-block; color: #4A4A4A;}
-.order-list dl{width: 68vw; overflow: hidden;}
 .order-list dt,.teacher-photo{width: 64px; height: 64px; float: left; padding-right: 12px;}
 .order-list dt img,.teacher-photo img{display: block; width: 100%; border-radius: 10px;}
-.order-list dd{float: left; line-height: 22px;}
-.order-list dd h4{font-size: 14px;}
+.order-list dd{line-height: 22px;}
+.order-list dd h4{font-size: 13px;}
 .order-list dd p{font-size: 12px;}
 .order-list dd .time{font-size: 10px; margin-top: 6px; color: #444;}
 .order-list dd span{padding-right: 12px; color: #777;}
 .order-list .tr{padding-top: 12px;}
-.list-right{width: 70px;}
+.list-right{width: 68px;}
 .list-right span,.list-right strong{display: block; text-align: right;}
-.list-right .pay-status{font-size: 14px; font-weight: bold; line-height: 24px; margin-top: 4px;}
+.list-right .pay-status{font-size: 13px; font-weight: bold; line-height: 24px; margin-top: 4px;}
 .nopay{color: #FED846;}
 .okpay{color: #A5B3F4;}
 .cancelpay{color: #999;}
 .price{color: #FD8080; font-size: 20px; margin-top: 6px;}
 .status{font-size: 10px;}
 .cancel-btn,.delete-btn{font-size: 12px; color: #4a4a4a; border: 1px solid rgba(153,153,153,.5); border-radius: 24px; line-height: 24px; padding: 0 12px;}
-.order-list h5{font-size: 14px; color: #4a4a4a; line-height: 32px;background: linear-gradient(#f7f7f7,#f7f7f7 100%, transparent 100%) bottom / 100% 1px no-repeat;}
+.order-list h5{font-size: 13px; color: #4a4a4a; line-height: 32px;background: linear-gradient(#f7f7f7,#f7f7f7 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .order-list h5 span{display: inline-block;vertical-align: middle;}
 .right-link{width: 60px; margin-top: 25px; text-align: right; line-height: 60px;}
 /* 家长服务  我的订单,学习中心 结束 */
 .study-stage{padding: 16px 15px;}
-.study-stage dl{overflow: hidden;}
-.study-stage dt{width: 30%; float: left;}
-.study-stage dd{float: left; width: 58%; margin-left: 10px; padding-left: 8%; padding-bottom: 2em; border-left: 1px solid rgba(153,153,153,0.25); position: relative;}
+.study-stage dt{width: 120px;}
+.study-stage dd{margin-left: 10px; padding-left: 8%; padding-bottom: 2em; border-left: 1px solid rgba(153,153,153,0.25); position: relative;-webkit-flex: 1; flex: 1;}
 .study-stage dd:after{position: absolute; left: -9px; top: 16px; width: 16px; height: 16px; border-radius: 50%; background-color: #d8d8d8; content: '';}
 li.on dd:after{ background-color: #fd8080;}
 .study-stage h4{color: #444;}
 .study-stage dt h4{font-size: 18px;}
-.study-stage dd h4{font-size: 16px;}
-.study-stage p{font-size: 14px;}
+.study-stage dd h4{font-size: 15px;}
+.study-stage p{font-size: 13px;}
 .study-stage dt p{color: #999;}
 .study-stage dd p{color: #777;}
 /*  */
@@ -117,20 +117,20 @@ background-size: 74px 72px;padding: 14px 0;}
 .order-msg p{font-size: 12px; line-height: 24px; color: #000;}
 .order-msg span{color: #777;}
 .cancel-box{text-align: right; margin-top: 3em;}
-.big-cancel-btn{color: #FED846; display: inline-block; font-size: 14px; font-weight: bold;border: 2px solid #FED846;border-radius: 44px; line-height: 40px; padding: 0 26px;}
+.big-cancel-btn{color: #FED846; display: inline-block; font-size: 13px; font-weight: bold;border: 2px solid #FED846;border-radius: 44px; line-height: 40px; padding: 0 26px;}
 /*  */
 .mt30{margin-top: 30px;}
 .empty{text-align: center; margin-top: 40%;}
-.empty p,.empty2 p{font-size: 14px; color: #999; font-weight: bold;}
+.empty p,.empty2 p{font-size: 13px; color: #999; font-weight: bold;}
 .empty p{line-height: 42px;}
 .empty2{text-align: center; margin-top: 20%;}
-.empty2 h3{font-size: 16px; margin-top: 30px;}
+.empty2 h3{font-size: 15px; margin-top: 30px;}
 .empty2 p{line-height: 30px;}
 /*  */
 .study-details-box{padding: 16px;}
 .study-details-box h3{font-size: 18px;}
-.study-details-title p{font-size: 14px; color: #999;}
-.details-article p{font-size: 14px; line-height: 24px; color: #777;}
+.study-details-title p{font-size: 13px; color: #999;}
+.details-article p{font-size: 13px; line-height: 24px; color: #777;}
 .details-article h3{text-align: center; line-height: 36px; margin-top: 10px;}
 .details-article h3 strong{display: inline-block;}
 .details-article h3 strong:before,.details-article h3 strong:after{display: inline-block; content: ''; width: 16px; height: 8px; vertical-align: middle; background: url('../assets/break_line@2x.png') no-repeat center center; background-size: 16px 8px;}
@@ -149,7 +149,7 @@ background-size: 74px 72px;padding: 14px 0;}
 .place-word::-webkit-input-placeholder{
     color: #999; 
 }
-.search-key a,.search-top input{ border-radius: 36px; font-size: 14px; line-height: 36px;}
+.search-key a,.search-top input{ border-radius: 36px; font-size: 13px; line-height: 36px;}
 .search-key a{display: inline-block; border: 1px solid #999; padding:0 1em; margin: 0 .5em 1em 0; color: #333;}
 .search-key a.on{background-color: #FED846; border-color: #FED846;}
 
@@ -161,13 +161,12 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 
 
 /* 是否删除搜索历史 */
-.search-foot a{display: inline-block; border-radius: 44px; line-height: 30px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 14px;}
+.search-foot a{display: inline-block; border-radius: 44px; line-height: 30px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 13px;}
 .cancle-link{background-color: #fff; color: #FED846;}
 .sure-link{background-color: #FED846; color: #4a4a4a;}
 /* 找老师列表 */
-.teacher-list li{overflow: hidden;}
-.teacher-photo{margin-top: 10px;}
-.teacher-info{float: left; width: calc(100vw - 108px);}
+.teacher-photo{margin-top: 10px; width: 64px; height: 64px;}
+.teacher-info{-webkit-flex: 1; flex: 1;}
 .teacher-info p{font-size: 10px; color: #777; line-height: 24px;}
 .t-label{font-style: normal; background-color: #f3f3f3; border-radius: 20px; line-height: 14px; padding: 0 6px;}
 .t-money{color: #FD8080; font-weight: bold;}
@@ -179,19 +178,30 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .sign-class{background-color: #32A5F7;}
 .clsss-total{color: #999;}
 /* 认证与服务 */
-.idservice li{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
+.idservice li,.attention-list li{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .idservice li a{display: block; padding: 14px 0 14px 56px; position: relative;}
 .idservice li a:before{content: ''; display: inline-block; position: absolute; width: 40px; height: 40px; left: 0;}
 .idservice li a.iserver:before{background: url('../assets/icon/server@2x.png') no-repeat left center; background-size: 40px 40px;}
 .idservice li a.iqualified:before{background: url('../assets/icon/qualified@2x.png') no-repeat left center; background-size: 40px 40px;}
 .idservice li a.irealname:before{background: url('../assets/icon/realname@2x.png') no-repeat left center; background-size: 40px 40px;}
 .idservice li a.iauthentic:before{background: url('../assets/icon/authentic@2x.png') no-repeat left center; background-size: 40px 40px;}
-.idservice h4{color: #444; font-size: 16px;}
+.idservice h4{color: #444; font-size: 15px;}
 .idservice p{color: #999; font-size: 12px;}
+/* 我的关注 */
+.attention-list li{    
+	display: -webkit-flex; display: -moz-flex; display: flex; align-items:center;
+}
+.attention-list li img{border-radius: 50%; width: 40px; height: 40px; margin-right: 16px;}
+.attention-list li strong,.attention-list li a{display: inline-block; }
+.attention-list li strong{line-height: 72px;-webkit-flex: 1; flex: 1;}
+.attention-list li a{font-size: 13px; font-weight: bold; color: #999; border: 1px solid rgba(153,153,153,0.50);border-radius: 4px;line-height: 24px; padding: 0 6px;}
+
+
+
 /* 弹出层 */
 .modal{display: none;}
 .modal-all{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1;}
-.modal-bg,.modal-box ul{width: 100%;  left: 0;}
+.modal-bg,.modal-box ul{width: 100%; left: 0;}
 .modal-bg{ position: absolute; bottom: 0; background-color: rgba(0, 0, 0, .4); z-index: 1; height: 100%;}
 .tab-modal .modal-bg{height: 80%;}
 .modal-box{position: absolute; z-index: 2; width: 100%;}
@@ -200,7 +210,7 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .tip-main{background-color: #fff; border-radius: 13px; width: 90%; height: 160px; position: absolute; left: 5%; top: 25%; z-index: 3; padding: 20px; box-sizing: border-box;}
 .tip-main h3{font-size: 20px; line-height: 40px; height: 80px;}
 .modal-box ul{background-color: #fff; border-radius: 0 0 15px 15px; position: absolute; top: -1px; z-index: 3; border-top: 1px solid #eaeaea;}
-.modal-box li{margin: 0 16px; line-height: 48px; font-size: 14px;}
+.modal-box li{margin: 0 16px; line-height: 48px; font-size: 13px;}
 .modal-box li.on{background: url('../assets/right_sel@2x.png') no-repeat right center; background-size: 20px 16px; color: #FED846;}
 /* 虚化内容 */
 .blur{ -webkit-filter: blur(4px);filter: blur(4px);}
