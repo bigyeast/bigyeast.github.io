@@ -16,7 +16,7 @@ input:focus{outline:none;}
 .pull-right{float: right;}
 .border-bottom{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .container{padding: 0 16px;}
-body{font-family: PingFangSC-Regular; color: #444;-webkit-font-smoothing: antialiased}
+body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font-smoothing: antialiased}
 
 /* 各种图标 */
 [class^="icon-"],[class*=" icon-"]{display: inline-block;vertical-align: middle;}
@@ -66,8 +66,8 @@ background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100
 /* list */
 .order-list{padding: 0 16px;}
 .order-list li,.teacher-list li{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat; padding-bottom: 12px;}
-.order-list li section,.teacher-list li,.study-stage dl,.order-left dl{display: -webkit-flex; display: -moz-flex; display: flex;}
-.order-list li .order-left,.order-list dd{-webkit-flex: 1; flex: 1;}
+.order-list li section,.teacher-list li,.study-stage dl,.order-left dl,.flexbox{display: -webkit-flex; display: -moz-flex; display: flex;}
+.order-list li .order-left,.order-list dd,.flex1{-webkit-flex: 1; flex: 1;}
 .order-list mark,.teacher-list mark{background-color: #FED846; border-radius: 4px; font-size: 12px; font-weight: normal; padding: 2px;}
 .order-list h3,.teacher-info h3{line-height: 36px;}
 .order-list h3 strong,.teacher-info h3 strong{font-size: 15px; color: #444;}
@@ -111,7 +111,7 @@ background-size: 74px 72px;padding: 14px 0;}
 .non-pay h4{font-size: 20px; line-height: 28px;}
 .non-pay p{font-size: 12px; line-height: 24px;}
 .order-msg,.sub-title,.cancel-box{margin: 0 16px 10px;}
-.sub-title{font-size: 18px; line-height: 36px; position: relative;}
+.sub-title{font-size: 17px; line-height: 36px; position: relative;}
 .sub-title:after{border-bottom: 4px solid #FED846; content: ''; width: 2em; position: absolute; left: 0; bottom: 0;}
 .order-msg{padding-bottom: 12px; background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .order-msg p{font-size: 12px; line-height: 24px; color: #000;}
@@ -161,7 +161,7 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 
 
 /* 是否删除搜索历史 */
-.search-foot a{display: inline-block; border-radius: 44px; line-height: 30px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 13px;}
+.cancle-link,.sure-link{display: inline-block; border-radius: 44px; line-height: 30px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 13px;}
 .cancle-link{background-color: #fff; color: #FED846;}
 .sure-link{background-color: #FED846; color: #4a4a4a;}
 /* 找老师列表 */
@@ -195,9 +195,49 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .attention-list li strong,.attention-list li a{display: inline-block; }
 .attention-list li strong{line-height: 72px;-webkit-flex: 1; flex: 1;}
 .attention-list li a{font-size: 13px; font-weight: bold; color: #999; border: 1px solid rgba(153,153,153,0.50);border-radius: 4px;line-height: 24px; padding: 0 6px;}
+/* 课件详情 */
+.class-type{margin-top: 16px;}
+.class-type h3{font-size: 17px; line-height: 44px; border-bottom: 1px solid #eaeaea;}
+.class-type h3 em{font-style: normal; font-size: 12px; text-decoration: line-through; color: #999; display: inline-block; padding: 0 6px;}
+.class-type h3 strong{display: inline-block;}
+.class-type h3 .nowprice{font-size: 20px; color: #FD8080;}
+.class-type ul{flex-direction:row;flex-wrap:wrap;border-bottom: 1px solid #eaeaea;padding: 10px 0;}
+.class-type ul li{-webkit-flex: 33.3333%; flex: 33.3333%; text-align: center;padding: 10px 0;}
+.class-type ul p{font-size: 12px; color: #777; line-height: 20px;}
+.class-type ul p:last-child{font-weight: bold; color: #A5B3F4;}
+.class-type ul i{width: 24px; height: 24px; margin-bottom: 4px;}
+.icon-c-type{background-image: url('../assets/icon/type@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.icon-c-badyage{background-image: url('../assets/icon/badyage@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.icon-c-timeinterval{background-image: url('../assets/icon/timeinterval@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.icon-c-audition{background-image: url('../assets/icon/audition@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.icon-c-class{background-image: url('../assets/icon/class@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.icon-c-time{background-image: url('../assets/icon/time@2x.png'); -webkit-background-size: 24px; background-size: 24px;}
+.c-info{padding: 12px 0;}
+.c-info p,.point-list li,.class-info p{font-size: 13px; line-height: 24px;}
+.point-list li{color: #777; position: relative; padding-left: 13px;}
+.point-list li:before{content: ''; display: inline-block; width: 5px; height: 5px; background-color: #D8D8D8; border-radius: 50%; position: absolute; top: 10px; left: 0;}
+.class-info{margin-top: 10px; margin-bottom: 100px;}
+.class-info h3{line-height: 36px;}
+.class-info h3 strong{font-size: 15px;}
+.class-info h3 span{font-size: 13px; color: #999; margin-left: 3em;}
+.class-info p{color: #777;}
+.pay-fix{position: fixed; z-index: 3; bottom: 0; width: 100%; height: 72px; box-shadow: 0 2px 8px 0 rgba(0,0,0,0.50); background-color: #fff;}
+.pay-fix-main{padding: 14px 18px 14px 24px; line-height: 44px;}
+.pay-fix strong{color: #FD8080; font-size: 20px;}
+.pay-fix .c-consult{background: url('../assets/icon/reply_pre@2x.png') no-repeat center top; -webkit-background-size: 18px 18px;
+background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30px; font-size: 10px; line-height: 12px; vertical-align: middle;}
+.pay-fix .sure-link{line-height: 40px; margin-left: 16px; vertical-align: middle;}
 
-
-
+/* 轮播图 */
+.addWrap{width:100%;background:#fff; margin-top: 8px;}
+.addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;}
+.addWrap .swipe-wrap{overflow:hidden;position:relative;}
+.addWrap .swipe-wrap > li {float: left;width: 100%;position:relative;}
+.addWrap img{width: 100%; display: block; border-radius: 8px;}
+#position{ position:absolute; bottom:3px; right:0; width:100%; padding-right:8px;text-align:right;}
+#position li{width:7px;height:7px;margin:0 2px;display:inline-block;-webkit-border-radius:5px;border-radius:5px;background-color:#fff;}
+#position li.cur{background-color:#d2d2d2;}
+.img-responsive { display: block; max-width: 100%;  height: auto;}
 /* 弹出层 */
 .modal{display: none;}
 .modal-all{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1;}
@@ -241,7 +281,12 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 	.icon-history{background: url('../assets/icon/history@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-trash{background: url('../assets/trash@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.search-top input{background:#f3f3f3 url('../assets/icon/search-grey@3x.png') no-repeat 20px 12px; background-size: 15px 15px;}
-
+	.icon-c-type{background-image: url('../assets/icon/type@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
+	.icon-c-badyage{background-image: url('../assets/icon/badyage@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
+	.icon-c-timeinterval{background-image: url('../assets/icon/timeinterval@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
+	.icon-c-audition{background-image: url('../assets/icon/audition@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
+	.icon-c-class{background-image: url('../assets/icon/class@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
+	.icon-c-time{background-image: url('../assets/icon/time@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
 /* 小星星 */
 	.fivestar i{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'); background-size: 10px 10px,10px 10px,10px 10px,10px 10px,10px 10px; background-position: 0 center, 12px center,24px center,36px center,48px center;}
 	.fivestar i.four{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png');}

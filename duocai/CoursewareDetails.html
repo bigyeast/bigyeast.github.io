@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>多彩-课件详情</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="container">
+		 <!-- Swiper -->
+        <div class="addWrap">
+  			<div class="swipe" id="mySwipe">
+    			<ul class="swipe-wrap"> 
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		        </ul>
+	        <!-- 索引的 li标签 -->  
+	        <ul id="position"> 
+	            <li class="cur"></li>  
+	            <li></li>  
+	            <li></li>
+	        </ul>
+		</div>
+        <!-- Swiper end -->
+        <div class="class-type">
+        	<h3 class="flexbox">
+        		<strong class="flex1">大师级的艺术家课程</strong> 
+        		<em>¥1896</em>
+        		<strong class="nowprice">¥1680</strong>
+        	</h3>
+        	<ul class="flexbox">
+        		<li>
+    				<i class="icon-c-type"></i>
+    				<p>类型</p>
+    				<p>语言类</p>
+        		</li>
+        		<li>
+    				<i class="icon-c-badyage"></i>
+    				<p>年龄段</p>
+    				<p>3-6岁</p>
+        		</li>
+        		<li>
+    				<i class="icon-c-timeinterval"></i>
+    				<p>时段</p>
+    				<p>全天班</p>
+        		</li>
+        		<li>
+    				<i class="icon-c-audition"></i>
+    				<p>试听</p>
+    				<p>有</p>
+        		</li>
+        		<li>
+    				<i class="icon-c-class"></i>
+    				<p>课时数</p>
+    				<p>60节</p>
+        		</li>
+        		<li>
+    				<i class="icon-c-time"></i>
+    				<p>时长</p>
+    				<p>45分钟</p>
+        		</li>
+        	</ul>
+        </div>
+        <div class="c-info">
+    		<p>试听内容：老师与家长协调安排</p>
+    		<p>授课方式：学生上门</p>
+    	</div>
+    </section>
+    <section class="point-list">
+    	<h3 class="sub-title">课程亮点</h3>
+		<ul class="container">
+			<li>快乐的绘画</li>
+			<li>美院专业教师任教</li>
+			<li>针对不同学院爱好订制课程</li>
+		</ul>
+	</section>
+	<section class="container class-info">
+		<h3><strong>课程介绍</strong> <span>课程大纲</span></h3>
+		<p>
+			创设民主和谐的学习气氛,让学生真正成为学习的主人,激发学生学习数学的兴趣。培养学生的合作精神,使每个学生在各自不同的基础上都能得到提高
+		</p>
+	</section>
+	<section class="pay-fix">
+		<div class="pay-fix-main">
+			<strong>合计  ¥1680</strong>
+			<span class="pull-right">
+				<i class="c-consult">咨询</i>
+				<a href="#" class="sure-link">预约试听</a>
+			</span>
+		</div>
+	</section>
+	<script src="js/swipe.min.js"></script>
+	<script src="js/swipe.js"></script>
+	<script type="text/javascript">
+	var bullets = document.getElementById('position').getElementsByTagName('li');
+	var banner = Swipe(document.getElementById('mySwipe'), {
+		auto: 2000,
+		continuous: true,
+		disableScroll:false,
+		callback: function(pos) {
+			var i = bullets.length;
+			while (i--) {
+			  bullets[i].className = ' ';
+			}
+			bullets[pos].className = 'cur';
+		}
+	});
+</script>
+</body>
