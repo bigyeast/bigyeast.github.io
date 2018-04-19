@@ -17,6 +17,7 @@ input:focus{outline:none;}
 .border-bottom{background: linear-gradient(#eaeaea,#eaeaea 100%, transparent 100%) bottom / 100% 1px no-repeat;}
 .container{padding: 0 16px;}
 body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font-smoothing: antialiased}
+.font12{font-size: 12px; color: #777;}
 
 /* 各种图标 */
 [class^="icon-"],[class*=" icon-"]{display: inline-block;vertical-align: middle;}
@@ -34,12 +35,12 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-student{background: url('../assets/icon/student@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-online{background: url('../assets/icon/online@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-organization{background: url('../assets/icon/organization@2x.png') no-repeat center center; background-size: 20px 20px;}
-
-.icon-hot,.icon-history,.icon-trash{width: 16px;height: 16px;}
+.icon-hot,.icon-history,.icon-trash,.icon-reply{width: 16px;height: 16px;}
 .icon-hot{background: url('../assets/icon/hot@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-history{background: url('../assets/icon/history@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-trash{background: url('../assets/trash@2x.png') no-repeat center center; background-size: 16px 16px;}
-
+.icon-yes{background: url('../assets/icon/serverok@2x.png') no-repeat left center; background-size: 10px 10px; padding-left: 14px; font-style: normal;}
+.icon-reply{background: url('../assets/icon/reply_pre@2x.png') no-repeat left center; background-size: 16px 16px;}
 
 
 /* 家长服务  活动中心 开始 */
@@ -167,11 +168,12 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 /* 找老师列表 */
 .teacher-photo{margin-top: 10px; width: 64px; height: 64px;}
 .teacher-info{-webkit-flex: 1; flex: 1;}
-.teacher-info p{font-size: 10px; color: #777; line-height: 24px;}
 .t-label{font-style: normal; background-color: #f3f3f3; border-radius: 20px; line-height: 14px; padding: 0 6px;}
 .t-money{color: #FD8080; font-weight: bold;}
+.old-money{color: #979797; text-decoration: line-through; font-size: 10px;}
 .teacher-class{border-top: 1px solid #eaeaea; margin-top: 6px;padding-top: 4px;}
-.teacher-class i{font-style: normal; color: #fff; display: inline-block; font-size: 10px; width: 14px; line-height: 14px; border-radius: 2px; text-align: center;}
+.teacher-info p{font-size: 10px; color: #777; line-height: 24px;}
+.sign i{font-style: normal; color: #fff; display: inline-block; font-size: 10px; width: 14px; line-height: 14px; border-radius: 2px; text-align: center;}
 .sign-hot{background-color: #FD8080;}
 .sign-try{background-color: #A5B3F4;}
 .sign-team{background-color: #8ECE48;}
@@ -225,8 +227,45 @@ a.active .triangle{border-top-color: #FED846;transform: rotate(45deg); margin-bo
 .pay-fix-main{padding: 14px 18px 14px 24px; line-height: 44px;}
 .pay-fix strong{color: #FD8080; font-size: 20px;}
 .pay-fix .c-consult{background: url('../assets/icon/reply_pre@2x.png') no-repeat center top; -webkit-background-size: 18px 18px;
-background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30px; font-size: 10px; line-height: 12px; vertical-align: middle;}
+background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30px; font-size: 10px; line-height: 12px; vertical-align: middle; font-style: normal; text-align: center;}
 .pay-fix .sure-link{line-height: 40px; margin-left: 16px; vertical-align: middle;}
+
+
+/* 找老师-机构 */
+.orgWrap .addWrap{margin: 0;}
+.orgWrap .addWrap img{border-radius: 0;}
+.orgWrap .nums{background-color: #F7F8FA;width: 32px; text-align: center; line-height: 18px; font-size: 12px; color: #4a4a4a; border-radius: 10px; position: absolute; bottom: 10px; right: 10px;}
+.org-info,.org-address{border-bottom: 1px solid #eaeaea; padding-bottom: 6px;}
+.orghave .icon-right{margin-top: 7px;}
+.org-address{padding-top: 4px;}
+.org-address strong,.org-address .i-tel{font-size: 13px; line-height: 24px; padding-left: 22px;}
+.org-address strong{color: #4a4a4a; background: url('../assets/icon/address@2x.png') no-repeat left 3px; background-size: 16px 16px;}
+.org-address span{font-size: 10px; color: #777; font-weight: normal;}
+.org-address .i-tel{background: url('../assets/icon/tel@2x.png') no-repeat left center; background-size: 16px 16px; font-weight: bold; color: #FD8080;}
+.nice-class p{padding-left: 8px;}
+.nice-class strong{font-size: 13px; line-height: 28px; color: #4a4a4a;}
+.nice-class .sign i{margin-top: 8px;}
+.nice-class .pull-right{margin-top: 14px;}
+.other-class{display: inline-block; border-radius: 44px; line-height: 28px; padding: 0 1.2em; border: 2px solid #FED846; font-size: 13px; color: #FED846; font-weight: bold;}
+.nice-class .other-class{margin: 14px 0;}
+.nice-class article{border-bottom: 1px solid #eaeaea; padding-bottom: 8px; margin-bottom: 10px;}
+.nice-class h4{font-size: 15px; color: #4a4a4a; line-height: 36px;}
+.nice-class article p{font-size: 13px; color: #777; line-height: 24px;padding: 0;}
+.nice-class li{font-size: 13px; line-height: 18px;}
+.teacher-show{justify-content: space-between; flex-wrap:wrap;}
+.teacher-show figure{text-align: center; width: 64px; margin-bottom: 4px;}
+.teacher-show figure img{width: 64px; height: 64px; border-radius: 50%;}
+.teacher-show figcaption{font-size: 13px; color: #4a4a4a;  line-height: 24px; font-weight: bold;}
+.stu-comment h3 a{color: #A5B3F4; font-size: 13px;}
+.stu-comment li{margin-bottom: 20px; margin-top: 20px;}
+.stu-comment .stu-photo{width: 40px; margin-right: 8px;}
+.stu-comment .stu-photo img{width: 40px; height: 40px; border-radius: 50%;}
+.stu-comment .stu-name,.stu-comment p{font-size: 13px; color: #333; line-height: 24px;}
+.stu-comment .stu-time{font-size: 12px; color: #777; line-height: 20px;}
+.stu-comment .teacher-reply{background-color: #f7f8fa; border-radius: 8px; padding: 8px;}
+.teacher-reply h5{margin-bottom: 6px;}
+.teacher-reply h5 strong{font-size: 13px; color: #FED846; display: inline-block; vertical-align: middle; line-height: 16px;}
+.teacher-reply p{color: #777; line-height: 20px; padding-left: 20px;}
 
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
@@ -280,6 +319,7 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 	.icon-hot{background: url('../assets/icon/hot@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-history{background: url('../assets/icon/history@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-trash{background: url('../assets/trash@3x.png') no-repeat center center; background-size: 16px 16px;}
+	.icon-reply{background: url('../assets/icon/reply_pre@3x.png') no-repeat left center; background-size: 16px 16px;}
 	.search-top input{background:#f3f3f3 url('../assets/icon/search-grey@3x.png') no-repeat 20px 12px; background-size: 15px 15px;}
 	.icon-c-type{background-image: url('../assets/icon/type@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
 	.icon-c-badyage{background-image: url('../assets/icon/badyage@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
@@ -299,5 +339,7 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 	.idservice li a.iqualified:before{background: url('../assets/icon/qualified@3x.png') no-repeat left center; background-size: 40px 40px;}
 	.idservice li a.irealname:before{background: url('../assets/icon/realname@3x.png') no-repeat left center; background-size: 40px 40px;}
 	.idservice li a.iauthentic:before{background: url('../assets/icon/authentic@3x.png') no-repeat left center; background-size: 40px 40px;}
+	.org-address strong{background: url('../assets/icon/address@3x.png') no-repeat left 3px; background-size: 16px 16px;}
+	.org-address .i-tel{background: url('../assets/icon/tel@3x.png') no-repeat left center; background-size: 16px 16px;}
 }
 
