@@ -42,7 +42,7 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-trash{background: url('../assets/trash@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-yes{background: url('../assets/icon/serverok@2x.png') no-repeat left center; background-size: 10px 10px; padding-left: 14px; font-style: normal; margin-right: 4px;}
 .icon-reply{background: url('../assets/icon/reply_pre@2x.png') no-repeat left center; background-size: 16px 16px;}
-
+.icon-smile{width: 30px; height: 30px;background: url('../assets/icon/smile@2x.png') no-repeat left center; background-size: 30px 30px;}
 
 /* 家长服务  活动中心 开始 */
 .ac-list img{display: block; width: 100%; border-radius: 15px 15px 0 0;}
@@ -269,6 +269,10 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 .teacher-reply h5{margin-bottom: 6px;}
 .teacher-reply h5 strong{font-size: 13px; color: #FED846; display: inline-block; vertical-align: middle; line-height: 16px;}
 .teacher-reply p{color: #777; line-height: 20px; padding-left: 20px;}
+.evaluate-head{margin: 16px 0;}
+.evaluate-left{border-right: 1px solid #eaeaea;}
+.evaluate-left p{line-height: 32px;}
+.evaluate-right{font-size: 12px; color: #999; padding-top: 16px; font-weight: bold;}
 
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
@@ -303,6 +307,9 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 .fivestar i.two{background-image: url('../assets/icon/teacher_star@2x.png'),url('../assets/icon/teacher_star@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png');}
 .fivestar i.one{background-image: url('../assets/icon/teacher_star@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png');}
 .fivestar i.zero{background-image: url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png'),url('../assets/icon/teacher_star2@2x.png');}
+
+.bfivestar i{background-image: url('../assets/icon/comment_star@2x.png'),url('../assets/icon/comment_star@2x.png'),url('../assets/icon/comment_star@2x.png'),url('../assets/icon/comment_star@2x.png'),url('../assets/icon/comment_star@2x.png'); background-size: 14px 14px,14px 14px,14px 14px,14px 14px,14px 14px; background-position: 0 center, 16px center,32px center,48px center,64px center; background-repeat: no-repeat; width: 78px; height: 14px; display: inline-block; margin-right: 2px;}
+
 
 @media only screen and (-webkit-min-device-pixel-ratio:3){
 	.icon-right{background: url('../assets/icon/entry@3x.png') no-repeat;-webkit-background-size: 100% 100%;background-size: 100% 100%;}
