@@ -37,12 +37,13 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-student{background: url('../assets/icon/student@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-online{background: url('../assets/icon/online@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-organization{background: url('../assets/icon/organization@2x.png') no-repeat center center; background-size: 20px 20px;}
-.icon-hot,.icon-history,.icon-trash,.icon-reply{width: 16px;height: 16px;}
+.icon-hot,.icon-history,.icon-trash,.icon-reply,.icon-close{width: 16px;height: 16px;}
 .icon-hot{background: url('../assets/icon/hot@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-history{background: url('../assets/icon/history@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-trash{background: url('../assets/trash@2x.png') no-repeat center center; background-size: 16px 16px;}
-.icon-yes{background: url('../assets/icon/serverok@2x.png') no-repeat left center; background-size: 10px 10px; padding-left: 14px; font-style: normal; margin-right: 4px;}
 .icon-reply{background: url('../assets/icon/reply_pre@2x.png') no-repeat left center; background-size: 16px 16px;}
+.icon-close{background: url('../assets/register/close@2x.png') no-repeat; background-size: 16px 16px;}
+.icon-yes{background: url('../assets/icon/serverok@2x.png') no-repeat left center; background-size: 10px 10px; padding-left: 14px; font-style: normal; margin-right: 4px;}
 .icon-smile{width: 30px; height: 30px;background: url('../assets/icon/smile@2x.png') no-repeat left center; background-size: 30px 30px;}
 .icon-tsearch{width: 20px; height: 20px;background: url('../assets/icon/tsearch@2x.png') no-repeat left center; background-size: 20px 20px;}
 .icon-dance{background: url('../assets/icon/dance@2x.png') no-repeat left center; background-size: 26px 26px;}
@@ -303,6 +304,29 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 .evaluate-left{border-right: 1px solid #eaeaea;}
 .evaluate-left p{line-height: 32px;}
 .evaluate-right{font-size: 12px; color: #999; padding-top: 16px; font-weight: bold;}
+/* 个人信息 form表单 */
+.mobile-main{min-height: 100vh; background: url('../assets/bg/SFZ@2x.png') no-repeat center 55vh; -webkit-background-size: 160px 132px;
+background-size: 160px 132px;}
+.form-group{margin-bottom: 8px;}
+.form-group label{display: block; font-size: 12px; color: #999; line-height: 20px;}
+.form-group input[type="tel"],.form-group input[type="text"]{display: block;background: none; border: none; border-bottom: 1px solid #ddd; width: 100%; line-height: 32px; font-size: 15px;}
+.form-group input[type="tel"]:focus,.form-group input[type="text"]:focus{border-color: #FED846;}
+.form-group input.input-error{border-color: #FD8080;}
+.form-group input::placeholder{color: #999;}
+.input-group{position: relative;}
+.input-group i{position: absolute; right: 0;}
+.input-group .icon-close{top: 8px;}
+.error-info{color: #FD8080; font-size: 12px; line-height: 28px;}
+.getcode{display: inline-block; color: #FED846; font-size: 15px; font-weight: bold; line-height: 30px;}
+.getcode.sending{color: rgba(254, 216, 70, .5);}
+.foot-btn{position: absolute; bottom: 20px; right: 16px;}
+.foot-btn{width: 110px; line-height: 44px; font-size: 15px; border-radius: 40px; border: none; background-color: #FED846;}
+.foot-btn:disabled{background-color: #d8d8d8; color: #fff;}
+input[type=radio]{border: 2px solid #c7c7c7; outline: 0!important; background-color: transparent; -webkit-appearance: none; border-radius: 100%; width: 16px; height: 16px; position: relative; vertical-align: middle; line-height: 20px;}
+input[type=radio]:checked{border-color: #fe8080;}
+input[type=radio]:checked:after{content: ''; width: 8px; height: 8px; background-color: #fe8080;border-radius: 100%; display: inline-block; position: absolute; left: 2px; top: 2px;}
+.gender-group label,.gender-group span{display: inline-block;}
+
 
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
@@ -361,6 +385,7 @@ background-size: 18px 18px; padding-top: 20px; display: inline-block; width: 30p
 	.icon-history{background: url('../assets/icon/history@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-trash{background: url('../assets/trash@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-reply{background: url('../assets/icon/reply_pre@3x.png') no-repeat left center; background-size: 16px 16px;}
+	.icon-close{background: url('../assets/register/close@3x.png') no-repeat; background-size: 16px 16px;}
 	.search-top input{background:#f3f3f3 url('../assets/icon/search-grey@3x.png') no-repeat 20px 12px; background-size: 15px 15px;}
 	.icon-c-type{background-image: url('../assets/icon/type@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
 	.icon-c-badyage{background-image: url('../assets/icon/badyage@3x.png'); -webkit-background-size: 24px; background-size: 24px;}
