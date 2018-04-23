@@ -327,7 +327,8 @@ input[type=radio]:checked{border-color: #fe8080;}
 input[type=radio]:checked:after{content: ''; width: 8px; height: 8px; background-color: #fe8080;border-radius: 100%; display: inline-block; position: absolute; left: 2px; top: 2px;}
 .gender-group label,.gender-group span{display: inline-block;}
 
-
+.form-group select{display: block; width: 100%; text-align: center; -webkit-appearance:none;background: url('../assets/icon/pull_down@2x.png') no-repeat right center; -webkit-background-size: 13px 8px; background-size: 13px 8px; border: none;}
+.form-group select:focus{outline: none;}
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
 .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;}
