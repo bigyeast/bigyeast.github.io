@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>多彩-百花园</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="container">
+		 <!-- Swiper -->
+        <div class="addWrap">
+  			<div class="swipe" id="mySwipe">
+    			<ul class="swipe-wrap"> 
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		            <li><a href="#"><img src="images/s1.jpg"></a></li>
+		        </ul>
+		        <!-- 索引的 li标签 -->  
+		        <ul id="position"> 
+		            <li class="cur"></li>  
+		            <li></li>  
+		            <li></li>
+		        </ul>
+			</div>
+		</div>
+        <!-- Swiper end -->
+        <div class="bhy-article-list">
+        	<section class="art-item">
+        		<figure class="msg-list flexbox">
+					<img src="images/t1.jpg" alt="">
+					<div class="flex1">
+						<h4>Deonte Corwin</h4>
+						<p><span class="ac-time">2018-02-01 13:45</span></p>
+				 	</div>
+				</figure>
+        		<div class="item-title">
+        			<h3><em>五花八门</em> 一组插画设计欣赏，最近疯狂爱了。</h3>
+        			<p>今天的插图作为一门发展已久的独立艺术门类。</p>
+        		</div>
+				<ul class="img-more">
+					<li><img src="images/img-4.jpg" alt=""></li>
+					<li><img src="images/img-5.jpg" alt=""></li>
+					<li><img src="images/img-6.jpg" alt=""></li>
+				</ul>
+				<div class="tr bhy-read">
+					<span><i class="icon-eye"></i> <em>56</em></span>
+					<span><i class="icon-reply"></i> <em>56</em></span>
+				</div>
+        	</section>
+        	<section class="art-item">
+        		<figure class="msg-list flexbox">
+					<img src="images/t1.jpg" alt="">
+					<div class="flex1">
+						<h4>Deonte Corwin</h4>
+						<p><span class="ac-time">2018-02-01 13:45</span></p>
+				 	</div>
+				</figure>
+        		<div class="item-title">
+        			<h3>最好的人生状态就是，不管你有多少岁，有多少财富，你依旧坚持和努力，活成最好的~~~</h3>
+        		</div>
+				<ul class="img-one">
+					<li><img src="images/img-1.jpg" alt=""></li>
+				</ul>
+				<div class="tr bhy-read">
+					<span><i class="icon-eye"></i> <em>56</em></span>
+					<span><i class="icon-reply nor"></i> <em>56</em></span>
+				</div>
+        	</section>
+        	<section class="art-item">
+        		<figure class="msg-list flexbox">
+					<img src="images/t1.jpg" alt="">
+					<div class="flex1">
+						<h4>Deonte Corwin</h4>
+						<p><span class="ac-time">2018-02-01 13:45</span></p>
+				 	</div>
+				</figure>
+				<div class="img-right flexbox">
+					<div class="item-title flex1">
+	        			<h3><em>五花八门</em> 给你的温暖就是最最好的告白~~~</h3>
+	        			<p>在漫天飞舞的雪花中,那些坚守的身影成为冬日里最温暖的画面…</p>
+	        		</div>
+	        		<div class="img-side">
+	        			<img src="images/img-5.jpg" alt="">
+	        		</div>
+				</div>
+        		
+				
+				<div class="tr bhy-read">
+					<span><i class="icon-eye"></i> <em>56</em></span>
+					<span><i class="icon-reply"></i> <em>56</em></span>
+				</div>
+        	</section>
+        </div>
+    </section>
+ 
+	
+	<script src="js/swipe.min.js"></script>
+	<script type="text/javascript">
+	var bullets = document.getElementById('position').getElementsByTagName('li');
+	var banner = Swipe(document.getElementById('mySwipe'), {
+		auto: 2000,
+		continuous: true,
+		disableScroll:false,
+		callback: function(pos) {
+			var i = bullets.length;
+			while (i--) {
+			  bullets[i].className = ' ';
+			}
+			bullets[pos].className = 'cur';
+		}
+	});
+</script>
+</body>
