@@ -409,6 +409,7 @@ border-radius: 13px; margin-bottom: 16px;}
 .my-list a>strong{flex: 1; color: #444; padding-left: 16px;}
 .my-list a span{ color: #999;}
 .my-list a strong{display: inline-block; line-height: 54px; vertical-align: middle; margin-right: 12px;}
+.my-list span strong{font-size: 13px;}
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
 .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;}
