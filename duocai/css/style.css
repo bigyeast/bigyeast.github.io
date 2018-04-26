@@ -33,7 +33,7 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-order-empty{background: url('../assets/bg/indent@2x.png') no-repeat center center; background-size: 154px 160px;}
 .icon-assess-empty{background: url('../assets/bg/evaluate@2x.png') no-repeat center center; background-size: 154px 160px;}
 .icon-reservations-empty{background: url('../assets/bg/succeed@2x.png') no-repeat center center; background-size: 132px 120px; width: 132px; height: 120px;}
-.icon-close,.icon-teacher,.icon-student,.icon-online,.icon-organization,.icon-tsearch,.icon-f-comment,.icon-f-share,.icon-f-collect{width: 20px; height: 20px;}
+.icon-close,.icon-teacher,.icon-student,.icon-online,.icon-organization,.icon-tsearch,.icon-f-comment,.icon-f-share,.icon-f-collect,.icon-evaluate,.icon-baby,.icon-phone,.icon-truename{width: 20px; height: 20px;}
 .icon-close{background: url('../assets/close/gray@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-teacher{background: url('../assets/icon/teacher@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-student{background: url('../assets/icon/student@2x.png') no-repeat center center; background-size: 20px 20px;}
@@ -43,6 +43,11 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-f-comment{background: url('../assets/icon/comment@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-f-share{background: url('../assets/icon/share@2x.png') no-repeat center center; background-size: 20px 20px;}
 .icon-f-collect{background: url('../assets/icon/collect@2x.png') no-repeat center center; background-size: 20px 20px;}
+.icon-evaluate{background: url('../assets/icon/evaluate@2x.png') no-repeat center center; background-size: 20px 20px;}
+.icon-baby{background: url('../assets/icon/baby@2x.png') no-repeat center center; background-size: 20px 20px;}
+.icon-phone{background: url('../assets/icon/phone@2x.png') no-repeat center center; background-size: 20px 20px;}
+.icon-truename{background: url('../assets/icon/truename@2x.png') no-repeat center center; background-size: 20px 20px;}
+
 .icon-hot,.icon-history,.icon-trash,.icon-reply,.icon-close,.icon-eye,.icon-share,.icon-shared{width: 16px;height: 16px;}
 .icon-hot{background: url('../assets/icon/hot@2x.png') no-repeat center center; background-size: 16px 16px;}
 .icon-history{background: url('../assets/icon/history@2x.png') no-repeat center center; background-size: 16px 16px;}
@@ -55,9 +60,6 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-shared{background: url('../assets/icon/shared@2x.png') no-repeat; background-size: 16px 16px;}
 .icon-yes{background: url('../assets/icon/serverok@2x.png') no-repeat left center; background-size: 10px 10px; padding-left: 14px; font-style: normal; margin-right: 4px;}
 .icon-smile{width: 30px; height: 30px;background: url('../assets/icon/smile@2x.png') no-repeat left center; background-size: 30px 30px;}
-
-
-
 .icon-dance{background: url('../assets/icon/dance@2x.png') no-repeat left center; background-size: 26px 26px;}
 .icon-draw{background: url('../assets/icon/draw@2x.png') no-repeat left center; background-size: 26px 26px;}
 .icon-calligraphy{background: url('../assets/icon/calligraphy@2x.png') no-repeat left center; background-size: 26px 26px;}
@@ -394,6 +396,19 @@ border-radius: 13px; margin-bottom: 16px;}
 .text-comment::placeholder{color: #999;}
 .bhy-footer div{text-align: center; min-width: 40px;padding: 0 6px;}
 .bhy-footer p{font-size: 10px; color: #999;}
+/* 我的 */
+.my-basic{padding: 20px 24px 54px; background-color: #FED846; border-radius: 0 0 32px 32px;}
+.my-basic h3{font-size: 17px; line-height: 24px; margin-top: 12px;}
+.my-basic p{line-height: 24px; color: #4a4a4a; font-size: 12px;}
+.my-photo{width: 72px; height: 72px; border-radius: 50%;}
+.my-info{background: #fff; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12);border-radius: 16px; margin: -32px 32px 0; padding: 13px 0; text-align: center;}
+.my-info h4{font-size: 13px; color: #999; line-height: 18px;}
+.my-info p{font-size: 15px; font-weight: bold; color: #000; line-height: 20px;}
+.my-list{margin-top: 20px;}
+.my-list a{display: flex; line-height: 54px;align-items:center;}
+.my-list a>strong{flex: 1; color: #444; padding-left: 16px;}
+.my-list a span{ color: #999;}
+.my-list a strong{display: inline-block; line-height: 54px; vertical-align: middle; margin-right: 12px;}
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
 .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;}
@@ -452,6 +467,10 @@ border-radius: 13px; margin-bottom: 16px;}
 	.icon-f-comment{background: url('../assets/icon/comment@3x.png') no-repeat center center; background-size: 20px 20px;}
 	.icon-f-share{background: url('../assets/icon/share@3x.png') no-repeat center center; background-size: 20px 20px;}
 	.icon-f-collect{background: url('../assets/icon/collect@3x.png') no-repeat center center; background-size: 20px 20px;}
+	.icon-evaluate{background: url('../assets/icon/evaluate@3x.png') no-repeat center center; background-size: 20px 20px;}
+	.icon-baby{background: url('../assets/icon/baby@3x.png') no-repeat center center; background-size: 20px 20px;}
+	.icon-phone{background: url('../assets/icon/phone@3x.png') no-repeat center center; background-size: 20px 20px;}
+	.icon-truename{background: url('../assets/icon/truename@3x.png') no-repeat center center; background-size: 20px 20px;}
 	.icon-hot{background: url('../assets/icon/hot@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-history{background: url('../assets/icon/history@3x.png') no-repeat center center; background-size: 16px 16px;}
 	.icon-trash{background: url('../assets/trash@3x.png') no-repeat center center; background-size: 16px 16px;}
