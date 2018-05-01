@@ -68,7 +68,13 @@ body{font-family: PingFangSC-Regular,"Microsoft Yahei"; color: #444;-webkit-font
 .icon-manual{background: url('../assets/icon/manual@2x.png') no-repeat left center; background-size: 26px 26px;}
 .icon-tech{background: url('../assets/icon/tech@2x.png') no-repeat left center; background-size: 26px 26px;}
 .icon-sports{background: url('../assets/icon/sports@2x.png') no-repeat left center; background-size: 26px 26px;}
-
+.upload-img i{width: 230px; height: 146px;}
+.icon-default-id1{background: url('../assets/bg/identity-card_front@2x.png') no-repeat;	background-size: 230px 146px;}
+.icon-default-id2{background: url('../assets/bg/identity-card_break_nor@2x.png') no-repeat;	background-size: 230px 146px;}
+.icon-default-id3{background: url('../assets/bg/identity-card_hand_nor@2x.png') no-repeat; background-size: 230px 146px;}
+.icon-camera,.icon-album{width: 24px; height: 24px;}
+.icon-camera{background: url('../assets/icon/camera@2x.png') no-repeat; background-size: 24px 24px;}
+.icon-album{background: url('../assets/icon/album@2x.png') no-repeat; background-size: 24px 24px;}
 /* 找老师 */
 .t-head{padding-top: 6px;}
 .t-head span a{color: #000; font-size: 13px;}
@@ -334,7 +340,7 @@ background-size: 160px 132px;}
 .error-info{color: #FD8080; font-size: 12px; line-height: 28px;}
 .getcode{display: inline-block; color: #FED846; font-size: 15px; font-weight: bold; line-height: 30px;}
 .getcode.sending{color: rgba(254, 216, 70, .5);}
-.foot-btn{position: absolute; bottom: 20px; right: 16px;}
+.bady-info-main .foot-btn{position: absolute; bottom: 20px; right: 16px;}
 .foot-btn{width: 110px; line-height: 44px; font-size: 15px; border-radius: 40px; border: none; background-color: #FED846;}
 .foot-btn:disabled{background-color: #d8d8d8; color: #fff;}
 input[type=radio]{border: 2px solid #c7c7c7; outline: 0!important; background-color: transparent; -webkit-appearance: none; border-radius: 100%; width: 16px; height: 16px; position: relative; vertical-align: middle; line-height: 20px;}
@@ -406,10 +412,23 @@ border-radius: 13px; margin-bottom: 16px;}
 .my-info p{font-size: 15px; font-weight: bold; color: #000; line-height: 20px;}
 .my-list{margin-top: 20px;}
 .my-list a{display: flex; line-height: 54px;align-items:center;}
-.my-list a>strong{flex: 1; color: #444; padding-left: 16px;}
+.my-list a>strong{flex: 1; color: #444; padding-left: 16px; font-size: 15px;}
 .my-list a span{ color: #999;}
 .my-list a strong{display: inline-block; line-height: 54px; vertical-align: middle; margin-right: 12px;}
 .my-list span strong{font-size: 13px;}
+/* 实名认证 */
+.uoload-box{text-align: center; }
+.upload-img{margin: 15px 0; display: block;}
+.photo-demo{margin-bottom: 20px;}
+.photo-demo h4{font-size: 17px; line-height: 48px;}
+.demo-img img{width: 100%; display: block;}
+.id-modal{bottom: 20px; height: auto;}
+.bot-bor{border-bottom: 1px solid #eee;}
+.id-upload{background-color: #fff;}
+.id-upload ul{background-color:#fcfcfc; border-radius: 13px;}
+.id-upload ul li{padding: 12px 24px; font-size: 15px;}
+.id-upload strong{line-height: 24px;}
+.id-upload-btn{padding: 12px 24px; text-align: center; display: block; color: #FED846; font-size: 17px; font-weight: bold; margin-top: 10px;}
 /* 轮播图 */
 .addWrap{width:100%;background:#fff; margin-top: 8px;}
 .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;}
@@ -430,7 +449,9 @@ border-radius: 13px; margin-bottom: 16px;}
 .modal-box{position: absolute; z-index: 2; width: 100%;}
 .tab-modal .modal-box{position: relative;}
 .search-modal .modal-box{top: 0; height: 100%;}
-.tip-main{background-color: #fff; border-radius: 13px; width: 90%; height: 160px; position: absolute; left: 5%; top: 25%; z-index: 3; padding: 20px; box-sizing: border-box;}
+.id-upload,.tip-main{background-color: #fff; border-radius: 13px; box-sizing: border-box;}
+.tip-main{height: 160px; top: 25%; padding: 20px;}
+.id-modal,.tip-main{width: 90%;z-index: 3; position: absolute; left: 5%;}
 .tip-main h3{font-size: 20px; line-height: 40px; height: 80px;}
 .modal-box ul{background-color: #fff; border-radius: 0 0 15px 15px; position: absolute; top: -1px; z-index: 3; border-top: 1px solid #eaeaea;}
 .modal-box li{margin: 0 16px; line-height: 48px; font-size: 13px;}
@@ -488,6 +509,11 @@ border-radius: 13px; margin-bottom: 16px;}
 	.icon-c-audition{background-image: url('../assets/icon/audition@3x.png'); background-size: 24px;}
 	.icon-c-class{background-image: url('../assets/icon/class@3x.png'); background-size: 24px;}
 	.icon-c-time{background-image: url('../assets/icon/time@3x.png');  background-size: 24px;}
+	.icon-default-id1{background: url('../assets/bg/identity-card_front@3x.png') no-repeat;	background-size: 230px 146px;}
+	.icon-default-id2{background: url('../assets/bg/identity-card_break_nor@3x.png') no-repeat;	background-size: 230px 146px;}
+	.icon-default-id3{background: url('../assets/bg/identity-card_hand_nor@3x.png') no-repeat; background-size: 230px 146px;}
+	.icon-camera{background: url('../assets/icon/camera@3x.png') no-repeat; background-size: 24px 24px;}
+	.icon-album{background: url('../assets/icon/album@3x.png') no-repeat; background-size: 24px 24px;}
 /* 小星星 */
 	.fivestar i{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'); background-size: 10px 10px,10px 10px,10px 10px,10px 10px,10px 10px; background-position: 0 center, 12px center,24px center,36px center,48px center;}
 	.fivestar i.four{background-image: url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star@3x.png'),url('../assets/icon/teacher_star2@3x.png');}
