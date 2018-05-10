@@ -49,26 +49,35 @@
 						<option value="7">湖南省</option>
 					</select>
 				</div>
-				<button type="submit" class="foot-btn">保存</button>
+				<button type="submit" class="foot-btn" id="c-show">保存</button>
 			</form>
 		</section>
 	</section>
-<div class="modal search-modal" style="display: ;">
+	<!-- <div class="modal search-modal">
 		<div class="modal-box">
-			<!-- <div class="tip-main">
-				<h3>您的宝宝资料已更新成功</h3>
-				<div class="search-foot tr">
-					<a href="#" class="sure-link">确定</a>
-				</div>
-			</div> -->
 			<div class="tip-main">
 				<h3>您对宝宝资料做了修改但是没有保存，是否需要保存？</h3>
 				<div class="search-foot tr">
-					<a href="#" class="cancle-link">取消</a>
-					<a href="#" class="sure-link">保存</a>
+					<a href="#" class="cancle-link" id="c-hide">取消</a>
+					<a href="#" class="sure-link" id="c-show1">保存</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-bg"></div>
+	</div> -->
+	<div class="modal search-modal" id="modal">
+		<div class="modal-box">
+			<div class="tip-main">
+				<h3>您的宝宝资料已更新成功</h3>
+				<div class="search-foot tr">
+					<a href="#" class="sure-link" id="c-hide">确定</a>
 				</div>
 			</div>
 		</div>
 		<div class="modal-bg"></div>
 	</div>
+	<script src="js/toggle.js"></script>
+	<script>
+		boxToggle('c-show','c-hide','modal');
+	</script>
 </body>

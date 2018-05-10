@@ -23,19 +23,19 @@
 			<a href="#">篮球</a>
 			<a href="#">手创联盟</a>
 		</div>
-		<h4 class="clearfix"><span class="pull-left"><i class="icon-history"></i><strong>搜索历史</strong></span> <i class="icon-trash pull-right"></i></h4>
+		<h4 class="clearfix"><span class="pull-left"><i class="icon-history"></i><strong>搜索历史</strong></span> <i class="icon-trash pull-right" id="c-show"></i></h4>
 		<div class="border-bottom search-key">
 			<a href="#">架子鼓</a>
 			<a href="#">书法</a>
 			<a href="#">七彩绘画艺术</a>
 		</div>
 	</section>
-	<div class="modal search-modal" style="display: block;">
+	<div class="modal search-modal" id="modal">
 		<div class="modal-box">
 			<div class="tip-main">
 				<h3>您是否删除搜索历史？</h3>
 				<div class="search-foot tr">
-					<a href="#" class="cancle-link">取消</a>
+					<a href="javascript:;" class="cancle-link" id="c-hide">取消</a>
 					<a href="#" class="sure-link">确定</a>
 				</div>
 			</div>
@@ -43,5 +43,9 @@
 		</div>
 		<div class="modal-bg"></div>
 	</div>
+	<script src="js/toggle.js"></script>
+	<script>
+		boxToggle('c-show','c-hide','modal');
+	</script>
 </body>
 </html>

@@ -11,35 +11,44 @@
 		<div class="search-top">
 			<input type="text" placeholder="搜索老师名/机构名/课程名">
 		</div>
-		<div class="tab-control tab-teacher">
-			<a href="#">
+		<div class="tab-control tab-teacher" id="showbtns">
+			<a href="javscript:;">
 				授课地区 <em class="triangle"></em>
 			</a>
-			<a href="#" class="active">
+			<a href="javscript:;">
 				授课方式 <em class="triangle"></em>
 			</a>
-			<a href="#">
+			<a href="javscript:;">
 				信息来源 <em class="triangle"></em>
 			</a>
 		</div>
 	</section>
-	<div class="modal tab-modal" style="display: none;">
-		<div class="modal-box">
+	<div class="modal tab-modal" id="tabModal">
+		<div class="modal-box" id="modalBox">
+			<!-- 授课地区 -->
+			<ul class="tab-select active">
+				<li class="on">地区1</li>
+				<li>地区2</li>
+				<li>地区3</li>
+				<li>地区4</li>
+			</ul>
+			<!-- 授课方式 -->
 			<ul class="tab-select">
-				<!-- 授课方式 -->
 				<li class="on"><i class="icon-teacher"></i> 老师上门</li>
 				<li><i class="icon-student"></i> 学生上门</li>
 				<li><i class="icon-online"></i> 在线授教</li>
-				<!-- 信息来源 -->
+			</ul>
+			<!-- 信息来源 -->
+			<ul class="tab-select">
 				<li class="on"><i class="icon-teacher"></i> 个人</li>
 				<li><i class="icon-organization"></i> 机构</li>
 			</ul>
 		</div>
 		<div class="modal-bg"></div>
 	</div>
-	
+
 <!-- 当modal显示的时候，请给下面的div添加class：blur -->
-	<section class="container ">
+	<section class="container" id="blurbox">
 		<div class="control-content">
 			<ul class="teacher-list">
 				<li>
@@ -190,4 +199,59 @@
 			</ul>
 		</div>
 	</section>
+<script>
+	var oShowbtns = document.getElementById('showbtns');
+	var oBtn = oShowbtns.getElementsByTagName('a');
+	var oModals = document.getElementById('modalBox');
+	var oModal = oModals.getElementsByTagName('ul');
+
+	var iNow = 0;
+	//点击菜单后，给要显示的部分添加当前class为 active
+	function tab(){
+		//默认先去掉所有ul的active
+		for(var j = 0; j < oModal.length; j++){
+			// oControlList[j].className = conClass;
+			oModal[j].className = 'tab-select';
+		}
+		// 给对应的ul添加active
+		oModal[iNow].className = 'tab-select active';
+	}
+	// 遍历所有的tab
+for (var i = 0; i < oBtn.length; i++) {
+	oBtn[i].index = i;
+	// 点击某一个tab
+	oBtn[i].onclick = function(){
+		document.getElementById('tabModal').style.display = 'block';
+		// 给内容部分设置模糊滤镜
+		document.getElementById('blurbox').className = 'container blur';
+		// 获取当前tab的index值
+		iNow = this.index;
+		// 把所有tab的class都去掉active
+		for(var j = 0; j < oBtn.length; j++){
+			oBtn[j].className = '';
+		}
+		// 给当前被点击的tab添加active
+		oBtn[iNow].className = 'active';
+		tab();
+		// 遍历所有的选项li
+		var liTag = oModal[iNow].getElementsByTagName('li');
+		for(var s = 0; s < liTag.length; s++){
+			// 点了选项之后
+			liTag[s].onclick = function(){
+				document.getElementById('tabModal').style.display = 'none';
+				document.getElementById('blurbox').className = 'container';
+				for(var j = 0; j < oBtn.length; j++){
+					oBtn[j].className = '';
+				}
+				for(var k = 0; k < liTag.length; k++){
+					liTag[k].className = '';
+				}
+				this.className = 'on';
+				// 给内容部分去掉模糊滤镜	
+			}
+		}	
+	}
+	
+}
+</script>
 </body>

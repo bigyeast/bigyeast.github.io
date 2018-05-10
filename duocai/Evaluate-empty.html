@@ -9,18 +9,34 @@
 <body>
 	<section class="empty-tab">
 		<h2 class="main-title">我的评价</h2>
-		<div class="tab-control">
-			<a class="active">
+		<div class="tab-control" id="tab-control">
+			<a class="active" href="javascript:;">
 				待评价
 			</a>
-			<a href="#item2">
+			<a href="javascript:;">
 				已评价
 			</a>
 		</div>
-		<section class="empty">
-			<i class="icon-assess-empty"></i>
-			<p>您还没有评价课程哦~</p>
-		</section>
-		
+		<div class="control-content" id="control">
+			<ul class="active">
+				<li>
+					<section class="empty">
+						<i class="icon-assess-empty"></i>
+						<p>您还没有评价课程哦~</p>
+					</section>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<section class="empty">
+						<i class="icon-assess-empty"></i>
+						<p>您还没有评价课程哦~~~</p>
+					</section>
+				</li>
+			</ul>
 	</section>
+	<script src="js/tab.js"></script>
+	<script>	
+		tabToggle('tab-control','a','control','ul');
+	</script>
 </body>

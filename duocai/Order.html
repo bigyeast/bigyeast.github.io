@@ -9,22 +9,22 @@
 <body>
 	<section>
 		<h2 class="main-title">我的订单</h2>
-		<div class="tab-control tab-order">
-			<a class="active" href="#item1">
+		<div class="tab-control tab-order" id="tab-control">
+			<a class="active" href="javascript:;">
 				全部
 			</a>
-			<a href="#item2">
+			<a href="javascript:;">
 				未支付
 			</a>
-			<a href="#item3">
+			<a href="javascript:;">
 				已支付
 			</a>
-			<a href="#item4">
+			<a href="javascript:;">
 				已取消
 			</a>
 		</div>
-		<div id="item1" class="control-content active">
-			<ul class="order-list">
+		<div class="control-content" id="control">
+			<ul class="order-list active">
 				<li>
 					<section class="clearfix">
 						<div class="order-left">
@@ -176,8 +176,6 @@
 					<div class="tr"><a href="#" class="delete-btn">删除订单</a></div>
 				</li>
 			</ul>
-		</div>
-		<div id="item2" class="control-content active">
 			<ul class="order-list">
 				<li>
 					<section class="clearfix">
@@ -300,8 +298,6 @@
 					<div class="tr"><a href="#" class="delete-btn">删除订单</a></div>
 				</li>
 			</ul>
-		</div>
-		<div id="item3" class="control-content active">
 			<ul class="order-list">
 				<li>
 					<section class="clearfix">
@@ -334,8 +330,6 @@
 					<div class="tr"><a href="#" class="cancel-btn">取消订单</a></div>
 				</li>
 			</ul>
-		</div>
-		<div id="item4" class="control-content active">
 			<ul class="order-list">
 				<li>
 					<section class="clearfix">
@@ -370,4 +364,8 @@
 			</ul>
 		</div>
 	</section>
+	<script src="js/tab.js"></script>
+	<script>	
+		tabToggle('tab-control','a','control','ul','','active','order-list','order-list active');
+	</script>
 </body>
