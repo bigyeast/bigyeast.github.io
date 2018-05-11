@@ -36,13 +36,13 @@
 					</div>
 				</div>
 				<div class="form-group uoload-box">
-					<a href="#" class="upload-img">
+					<a href="#" class="upload-img" id="c-show1">
 						<i class="icon-default-id1"></i>
 					</a>
-					<a href="#" class="upload-img">
+					<a href="#" class="upload-img" id="c-show2">
 						<i class="icon-default-id2"></i>
 					</a>
-					<a href="#" class="upload-img">
+					<a href="#" class="upload-img" id="c-show3">
 						<i class="icon-default-id3"></i>
 					</a>
 				</div>
@@ -58,7 +58,7 @@
 			</form>
 		</section>
 	</section>
-<div class="modal search-modal" style="display: block;">
+<div class="modal search-modal" id="modal">
 		<div class="id-modal">
 			<div class="id-upload">
 				<ul class="id-upload-ul">
@@ -66,11 +66,16 @@
 					<li class="flexbox"><strong class="flex1">照片图库</strong> <i class="icon-album"></i></li>
 				</ul>
 			</div>
-			
 			<div class="id-upload">
-				<a href="#" class="id-upload-btn">取消</a>
+				<a href="#" class="id-upload-btn" id="c-hide">取消</a>
 			</div>
 		</div>
 		<div class="modal-bg"></div>
 	</div>
+	<script src="js/toggle.js"></script>
+	<script>
+		boxToggle('c-show1','c-hide','modal');
+		boxToggle('c-show2','c-hide','modal');
+		boxToggle('c-show3','c-hide','modal');
+	</script>
 </body>
